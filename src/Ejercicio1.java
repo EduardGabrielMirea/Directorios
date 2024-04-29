@@ -12,18 +12,18 @@ public class Ejercicio1 {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            //Muestra con la ruta absouta es decir desde la raiz, e inserta los archivos en un array list.
+            //Muestra con la ruta absouta es decir desde la raiz, e inserta los archivos en un vector.
             System.out.println("\nDirectorio actual: " + directory.getAbsolutePath());
             File[] files = directory.listFiles();
             int count = 1;
 
             System.out.println("0. Ir al directorio padre");
-            //Recorre el array list y lo imprime empezando desde "1 .".
+            //Recorre el vector y lo imprime empezando desde "1 .".
             for (File file : files) {
                 //1 + .
                 System.out.print(count + ". ");
                 if (file.isDirectory()) {
-                    System.out.println("<" + file.getName() + ">");
+                    System.out.println(file.getName()+" <Directorio>" );
                 } else {
                     //En caso de que sea un archivo, con file.length() podremos ver el tamaño del mismo.
                     System.out.println(file.getName() + " (" + file.length() + " bytes)");
@@ -48,13 +48,18 @@ public class Ejercicio1 {
             } else if (choice > 0 && choice <= files.length) {
                 //Choice - 1 ya que empezamos en 0 pero nuesto menu empieza en 1, entonces hay que quitarle siempre 1 para que conicida con el menu.
                 File chosenFile = files[choice - 1];
+
+                //En caso de que la opcion sea un directorio.
                 if (chosenFile.isDirectory()) {
+                    //En caso de que tengas permisos, .canRead() te vas al directorio elegido igualandolo con chosenFile.
                     if (chosenFile.canRead()) {
                         directory = chosenFile;
                     } else {
+                        // y si no tienes permisos.
                         System.out.println("No tienes permisos para acceder a este directorio.");
                     }
                 } else {
+                    //En caso de que la opcion elegida no sea un directorio y sea archivo, etc.
                     System.out.println("Esta opción no es un directorio válido.");
                 }
             } else {
