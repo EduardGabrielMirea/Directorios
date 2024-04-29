@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="041b7f57-3ae1-4baf-a7a7-763bc8d51b9c" name="Changes" comment="update2">
-      <change afterPath="$PROJECT_DIR$/src/apuntes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="041b7f57-3ae1-4baf-a7a7-763bc8d51b9c" name="Changes" comment="update4">
       <change beforePath="$PROJECT_DIR$/src/Ejercicio1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicio1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ejercicio1x.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicio1x.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714374272898</updated>
-      <workItem from="1714374274292" duration="4656000" />
+      <workItem from="1714374274292" duration="5798000" />
     </task>
     <task id="LOCAL-00001" summary="update1">
       <option name="closed" value="true" />
@@ -133,7 +130,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714375658829</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update3">
+      <option name="closed" value="true" />
+      <created>1714379047667</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714379047667</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update4">
+      <option name="closed" value="true" />
+      <created>1714380072555</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714380072555</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +155,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update1" />
     <MESSAGE value="update2" />
-    <option name="LAST_COMMIT_MESSAGE" value="update2" />
+    <MESSAGE value="update3" />
+    <MESSAGE value="update4" />
+    <option name="LAST_COMMIT_MESSAGE" value="update4" />
   </component>
 </project>
