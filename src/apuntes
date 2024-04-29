@@ -1,0 +1,40 @@
+Métodos para obtener el nombre o la ruta
+getName() 	Devuelve el nombre del fichero o directorio
+getPath() 	Devuelve la ruta relativa
+getAbsolutePath() 	Devuelve la ruta absoluta
+getCanonicalPath() 	Devuelve la ruta absoluta sin posibles redundancias
+
+Métodos para acceder al directorio padre o a los hijos (ficheros y directorios)
+list() 	Devuelve un array de Strings con todos los elementos contenidos en el File
+listFiles() 	Devuelve un array de Files con todos los elementos contenidos en el File
+getParent() 	Devuelve el nombre (String) del directorio padre. Si no existe por ser la raíz, devuelve null
+getParentFile() 	Devuelve el directorio padre como un File. Si no existe por ser la raíz, devuelve null
+
+Métodos para comprobar la existencia y características
+exists() 	Devuelve true si el fichero o directorio existe.
+isDirectory() 	Devuelve true si es un directorio.
+isFile() 	Devuelve true si es un fichero
+isHidden() 	Devuelve true si es un archivo oculto
+length() 	Devuelve el tamaño en bytes del archivo
+lastModified() 	Devuelve la fecha de modificación del archivo
+setLastModified() 	Actualiza la fecha de modificación del archivo
+
+Métodos para permisos
+canRead() 	Devuelve true si se tiene permiso de lectura
+canWrite() 	Devuelve true si se tiene permiso de escritura
+canExecute() 	Devuelve true si se tiene permiso de ejecución
+setReadable(boolean, boolean) 	Establece el permiso de acceso de lectura del propietario y de todos para este fichero.
+setWritable(boolean, boolean) 	Establece el permiso de acceso de escritura del propietario y de todos para este fichero.
+setExecutable(boolean, boolean) 	Establece el permiso de acceso de ejecución del propietario y de todos para este fichero.
+
+Métodos de creación y borrado
+createNewFile() 	Crear un nuevo archivo vacío asociado al File, siempre que no exista ya uno con el mismo nombre
+delete() 	Borra el archivo o directorio
+mkdir() 	Crea un directorio con el nombre indicado en la creación del File. Debe existir el directorio padre
+mkdirs() 	Como el anterior, pero si hace falta que crea todos los directorios de la ruta necesarios
+renameTo(String) 	Cambia el nombre del archivo
+
+Métodos acerca del espacio en el dispositivo
+getFreeSpace() 	Devuelve el espacio libre del dispositivo donde está situado el File
+getUsableSpace() 	Devuelve el espacio utilizable para la aplicación (menor que el espacio libre)
+getTotalSpace() 	Devuelve el espacio total del dispositivo donde está situado el File
