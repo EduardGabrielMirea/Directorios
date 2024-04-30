@@ -1,0 +1,13 @@
+Realiza un programa que permita navegar por los directorios de la unidad principal del sistema de archivos.
+
+    Debe empezar por la raíz (/ en Linux; c: \ en Windows). Recuerda que el método estático File.listRoots()[0] nos da la raíz.
+    Debe indicar el directorio que está mostrando.
+    Debe poner como primera opción ir al directorio padre (opción 0).
+    Debe poner un número delante de cada archivo o subdirectorio que se está mostrando. Observa que este número comienza con 1 (el 0 es para el padre). Si se ha guardado en un array la lista de archivos y directorios del directorio actual, recuerda que el primer elemento es el 0 (pero vosotros lo mostraréis con un 1 delante).
+    En caso de ser un archivo debe decir el tamaño. En caso de ser un subdirectorio, debe indicarse con <directorio>
+    Posteriormente debe dejar introducir un número. Las opciones serán:
+        -1 para terminar
+        0 ir al directorio padre
+        Cualquier otro número debe servir para cambiar a este directorio como el directorio activo. Si era un archivo, no tiene que hacer nada (en la imagen, no debe poder ir al 3, ya que es un archivo).
+        Se debe controlar que existe el padre (en el caso de la raíz, no tiene). Si no lo tiene, no hay que hacer nada.
+        Se debe controlar que hay permiso de lectura sobre un directorio, antes de cambiar a él, sino dará error (en la imagen, por ejemplo, seguramente no se podrá cambiar el directorio root, ya que no tendremos permiso de lectura sobre él)
