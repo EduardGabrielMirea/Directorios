@@ -15,6 +15,7 @@ public class Ejercicio1 {
             //Muestra con la ruta absouta es decir desde la raiz, e inserta los archivos en un vector.
             System.out.println("\nDirectorio actual: " + directory.getAbsolutePath());
             File[] files = directory.listFiles();
+            //Inicializamos el contdor en el bucle para que siempre se reinicie y no se acumulen los numeros del indice cada vez que navegamos por el menu.
             int count = 1;
 
             System.out.println("0. Ir al directorio padre");
